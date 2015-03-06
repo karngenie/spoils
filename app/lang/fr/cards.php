@@ -1,0 +1,31 @@
+<?php
+
+return array(
+    'CardName' => 'Nom :',
+    'CardNamePh' => 'Nom',
+    'CardSubType' => 'Type :',
+    'CardSubTypePh' => 'Type',
+    'CardText' => 'Texte:',
+    'CardTextPh' => 'Texte',
+    'CardNotes' => 'Notes :',
+    'CardNotesPh' => 'Notes',
+    'CardNumber' => 'Numéro :',
+    'CardNumberPh' => 'Numéro',
+    'CardThreshold' => 'Seuil :',
+    'CardThresholdPh' => 'Seuil',                
+    'CardCost' => 'Cout :',
+    'CardCostPh' => 'Cout', 
+    'CardStrenght' => 'Force :',
+    'CardStrenghtPh' => 'Force',
+    'CardLife' => 'Vie :',
+    'CardLifePh' => 'Vie',     
+    'CardSpeed' => 'Vitesse :',
+    'CardSpeedPh' => 'Vitesse', 
+    'CardStructure' => 'Structure :',
+    'CardStructurePh' => 'Structure', 
+    'CardType' => 'Type :',
+    'CardTrade' => 'Trade :',
+    'CardEdition' => 'Edition :',
+    'CardRarity' => 'Rareté :',
+
+);

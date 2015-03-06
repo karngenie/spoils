@@ -11,10 +11,32 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+// Route::get('/', function()
+// {
+// 	return View::make('hello');
+// });
 
 
-Route::controller('{lang}/search', 'searchController');
+    // app/Http/routes.php
+
+    Route::group(['prefix' => LaravelLocalization::setLocale()], function()
+    {
+        /** ADD ALL LOCALIZED ROUTES INSIDE THIS GROUP **/
+        Route::get('/', function()
+        {
+            return View::make('search');
+        });
+
+            Route::get('search', 'SearchController@getIndex');
+            //Route::get('search', 'SearchController@getIndex');
+
+            Route::post('search', 'SearchController@getInfos');
+
+
+        Route::get('test',function(){
+            return View::make('test');
+        });
+    });
+
+
+//Route::controller('{lang}/search', 'searchController');
