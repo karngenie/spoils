@@ -187,9 +187,9 @@
 						</div>
 					</div>			
 				</div>
-
-
-			
+				COUCOUCOU
+				{{Lang::get($testlg)}}
+				
          
 				{{Form::submit('Envoyer', array('class' => 'btn btn-primary pull-right')) }}<br>
 				{{

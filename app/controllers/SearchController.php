@@ -26,10 +26,11 @@ class SearchController extends BaseController {
 
 	//return View::make('projects.create', array('client_options' => $client_options));
 
+		$testlg='cards.CardEdition';
 		$card = Card::all ();
 
 		//return View::make('search');
-		return $this->layout->content = View::make('search')->with('data', $data)->with('card', Response::json( $card));
+		return $this->layout->content = View::make('search')->with('data', $data)->with('card', Response::json( $card))->with('testlg', $testlg);
 	}	
 
     public function getInfos()
