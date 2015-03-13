@@ -1,8 +1,8 @@
 <?php
 
 return array(
-    'CardName' => 'Nom :',
-    'CardNamePh' => 'Nom',
+    'CardName' => 'Nom/Num :',
+    'CardNamePh' => 'Nom/Num',
     'CardSubType' => 'Sous-Type :',
     'CardSubTypePh' => 'Type',
     'CardText' => 'Texte:',

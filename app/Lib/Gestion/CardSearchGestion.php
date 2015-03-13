@@ -29,7 +29,7 @@ class CardSearchGestion implements CardSearchGestionInterface {
 	{
 
 		var_dump($q);
-		$g=isset($q['g']) ? $q['g'] : "";
+		$g=str_replace("+"," ",isset($q['g']) ? $q['g'] : "");
 		$sty=isset($q['sty']) ? $q['sty'] : "";
 		$t=isset($q['t']) ? $q['t'] : "";
 		$n=isset($q['n']) ? $q['n'] : "";
