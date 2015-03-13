@@ -11,7 +11,7 @@
 
 
 
-			{{ Form::open(array('url' => LaravelLocalization::getCurrentLocale() .'/search','class' => '', 'method' => 'get')) }}
+			{{ Form::open(array('url' => LaravelLocalization::getCurrentLocale() .'/process','class' => '', 'method' => 'post')) }}
 				<div class="row">
 					<div class="col-md-12">
 						<div class="form-group">
@@ -27,13 +27,13 @@
 						</div>
 					</div>	
 
-					<div class="col-md-6">				
+{{-- 					<div class="col-md-6">				
 						<div class="form-group">
 							{{Form::label('number', Lang::get('cards.CardNumber'))}}
 
 							{{Form::text('number', null, array('class' => 'form-control input-sm', 'placeholder' => Lang::get('cards.CardNumberPh'))) }}
 						</div>
-					</div>
+					</div> --}}
 				</div>
 				<div class="row">
 					<div class="col-md-6">				
@@ -59,7 +59,7 @@
 									{{Form::label('threshold', Lang::get('cards.CardThreshold'))}}
 									<div class="row">
 										<div class="col-md-4">
-											{{Form::select('thresholdFilter', array(':' => '=', '>' => '>', '<' => '<'), null,array('class' => 'form-control input-sm'))}}
+											{{Form::select('thresholdFilter', array('=' => '=', '>' => '>', '<' => '<'), null,array('class' => 'form-control input-sm'))}}
 										</div>
 										<div class="col-md-8">
 											{{Form::number('threshold', null, array('class' => 'form-control input-sm', 'placeholder' => Lang::get('cards.CardThresholdPh'))) }}
@@ -73,7 +73,7 @@
 									{{Form::label('cost', Lang::get('cards.CardCost'))}}
 									<div class="row">
 										<div class="col-md-4">
-											{{Form::select('costFilter', array(':' => '=', '>' => '>', '<' => '<'), null,array('class' => 'form-control input-sm'))}}
+											{{Form::select('costFilter', array('=' => '=', '>' => '>', '<' => '<'), null,array('class' => 'form-control input-sm'))}}
 										</div>
 										<div class="col-md-8">
 											{{Form::number('cost', null, array('class' => 'form-control input-sm', 'placeholder' => Lang::get('cards.CardCostPh'))) }}
@@ -95,7 +95,7 @@
 									{{Form::label('strenght', Lang::get('cards.CardStrenght'))}}
 									<div class="row">
 										<div class="col-md-4">
-											{{Form::select('strenghtFilter', array(':' => '=', '>' => '>', '<' => '<'), null,array('class' => 'form-control input-sm'))}}
+											{{Form::select('strenghtFilter', array('=' => '=', '>' => '>', '<' => '<'), null,array('class' => 'form-control input-sm'))}}
 										</div>
 										<div class="col-md-8">
 											{{Form::number('strenght', null, array('class' => 'form-control input-sm', 'placeholder' => Lang::get('cards.CardStrenghtPh'))) }}
@@ -109,7 +109,7 @@
 									{{Form::label('life', Lang::get('cards.CardLife'))}}
 									<div class="row">
 										<div class="col-md-4">
-											{{Form::select('lifeFilter', array(':' => '=', '>' => '>', '<' => '<'), null,array('class' => 'form-control input-sm'))}}
+											{{Form::select('lifeFilter', array('=' => '=', '>' => '>', '<' => '<'), null,array('class' => 'form-control input-sm'))}}
 										</div>
 										<div class="col-md-8">
 											{{Form::number('life', null, array('class' => 'form-control input-sm', 'placeholder' => Lang::get('cards.CardLifePh'))) }}
@@ -130,7 +130,7 @@
 									{{Form::label('speed', Lang::get('cards.CardSpeed'))}}
 									<div class="row">
 										<div class="col-md-4">
-											{{Form::select('speedFilter', array(':' => '=', '>' => '>', '<' => '<'), null,array('class' => 'form-control input-sm'))}}
+											{{Form::select('speedFilter', array('=' => '=', '>' => '>', '<' => '<'), null,array('class' => 'form-control input-sm'))}}
 										</div>
 										<div class="col-md-8">
 											{{Form::number('speed', null, array('class' => 'form-control input-sm', 'placeholder' => Lang::get('cards.CardSpeedPh'))) }}
@@ -144,7 +144,7 @@
 									{{Form::label('structure', Lang::get('cards.CardStructure'))}}
 									<div class="row">
 										<div class="col-md-4">
-											{{Form::select('structureFilter', array(':' => '=', '>' => '>', '<' => '<'), null,array('class' => 'form-control input-sm'))}}
+											{{Form::select('structureFilter', array('=' => '=', '>' => '>', '<' => '<'), null,array('class' => 'form-control input-sm'))}}
 										</div>
 										<div class="col-md-8">
 											{{Form::number('structure', null, array('class' => 'form-control input-sm', 'placeholder' => Lang::get('cards.CardStructurePh'))) }}
@@ -187,7 +187,7 @@
 						</div>
 					</div>			
 				</div>
-				COUCOUCOU
+
 				{{Lang::get($testlg)}}
 				
          

@@ -28,7 +28,7 @@ class CreateCRaritiesTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('c_rarities');
+		//Schema::drop('c_rarities');
 	}
 
 }

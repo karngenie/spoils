@@ -27,7 +27,7 @@ class CreateCCardsEditionsRaritiesTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('c_cards_editions_rarities');
+		//Schema::drop('c_cards_editions_rarities');
 	}
 
 }

@@ -121,7 +121,8 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
-		'Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider'
+		'Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider',
+		'Barryvdh\Debugbar\ServiceProvider',
 
 	),
 

@@ -15,19 +15,17 @@ class CreateCardsTable extends Migration {
 		Schema::create('cards', function(Blueprint $table) {
 			$table->increments('id');
 			$table->timestamps();
-			$table->string('name',150);
-			$table->string('subType',150);
-			$table->string('text', 4000);
-			$table->string('notes', 350);
+
 			$table->integer('number')->unsigned();
 			$table->integer('threshold')->unsigned();
 			$table->integer('cost')->unsigned();
+			$table->integer('strenght')->unsigned();
 			$table->integer('life')->unsigned();
 			$table->integer('speed')->unsigned();
 			$table->integer('structure')->unsigned();
 			$table->integer('typeId')->unsigned();
 			$table->integer('tradeId')->unsigned();		
-			$table->string('shoppingTxt', 4000);			
+			$table->string('shoppingTxt', 4000);
 
 		});
 	}
@@ -39,7 +37,7 @@ class CreateCardsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('cards');
+		//Schema::drop('cards');
 	}
 
 }

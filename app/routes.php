@@ -31,6 +31,9 @@
             //Route::get('search', 'SearchController@getIndex');
 
             Route::post('search', 'SearchController@getInfos');
+            Route::get('process', 'ProcessController@getIndex');
+            Route::post('process', 'ProcessController@getIndex');
+            Route::get('result', 'ResultController@getIndex');
 
 
         Route::get('test',function(){

@@ -28,7 +28,7 @@ class CreateCTradesTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('c_trades');
+		//Schema::drop('c_trades');
 	}
 
 }

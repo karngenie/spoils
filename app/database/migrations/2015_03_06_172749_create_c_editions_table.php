@@ -28,7 +28,7 @@ class CreateCEditionsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('c_editions');
+		//Schema::drop('c_editions');
 	}
 
 }

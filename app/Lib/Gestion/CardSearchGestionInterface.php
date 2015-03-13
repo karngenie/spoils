@@ -3,6 +3,7 @@
 interface CardSearchGestionInterface {
 
     public function initLists();
+    public function resultSearch($q);
 
 
 }

@@ -28,7 +28,7 @@ class CreateCTypesTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('c_types');
+		//Schema::drop('c_types');
 	}
 
 }

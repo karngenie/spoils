@@ -3,7 +3,7 @@
 return array(
     'CardName' => 'Nom :',
     'CardNamePh' => 'Nom',
-    'CardSubType' => 'Type :',
+    'CardSubType' => 'Sous-Type :',
     'CardSubTypePh' => 'Type',
     'CardText' => 'Texte:',
     'CardTextPh' => 'Texte',
