@@ -38,6 +38,10 @@ class ResultController extends BaseController {
 
 
 
+		if (sizeof($cardtb)==1){			 
+			return Redirect::to(LaravelLocalization::getCurrentLocale().'/'.'card/'.$cardtb[0]->number);
+		}
+
 
 		return $this->layout->content = View::make('cards.result')->with('cardtb', $cardtb);
 	}	

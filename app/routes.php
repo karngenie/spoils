@@ -34,12 +34,15 @@
             Route::get('process', 'ProcessController@getIndex');
             Route::post('process', 'ProcessController@getIndex');
             Route::get('result', 'ResultController@getIndex');
+            Route::get('card/{n}', 'CardController@getIndex');
+            Route::get('card', 'CardController@getIndex');
 
 
+
+    });
         Route::get('test',function(){
             return View::make('test');
         });
-    });
 
 
 //Route::controller('{lang}/search', 'searchController');

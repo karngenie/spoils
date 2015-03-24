@@ -28,7 +28,6 @@ class CardSearchGestion implements CardSearchGestionInterface {
 	public function resultSearch($q)
 	{
 
-		var_dump($q);
 		$g=str_replace("+"," ",isset($q['g']) ? $q['g'] : "");
 		$sty=isset($q['sty']) ? $q['sty'] : "";
 		$t=isset($q['t']) ? $q['t'] : "";
@@ -83,23 +82,6 @@ class CardSearchGestion implements CardSearchGestionInterface {
 			'notes' => '%'.$n.'%',
 			'lang' => LaravelLocalization::getCurrentLocale(),
 		));		
-
-
-
-
-
-
-/*
-		echo 'g:'.$g.'<br>';
-		echo 'sty:'.$sty.'<br>';
-		echo 't:'.$t.'<br>';
-		echo 'n:'.$n.'<br>';
-		echo 'th:'.$th.'<br>';
-*/
-
-	
-
-
 
 
 		return $cardtb;
@@ -249,6 +231,26 @@ class CardSearchGestion implements CardSearchGestionInterface {
 
 	
 	}	
+
+
+	function getCard($number){
+
+		// test number un numérique
+
+		$cardtb=DB::table('cards')
+		            ->join('c_cards_descs', 'c_cards_descs.cardId', '=', 'cards.id')
+		            ->select('cards.*', 'name', 'subType','text','notes','visual')
+		            ->where('number', '=', $number)
+		            ->where('lang', '=', LaravelLocalization::getCurrentLocale())
+		            ->get();
+
+
+
+
+		return $cardtb;
+
+
+	}
 
 
 

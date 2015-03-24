@@ -14,11 +14,19 @@
 				<div class="row">
 					@foreach($cardtb as $card)
 
-						<div class="col-md-2 bg-info thumbnail ">{{$card->name}}
-							<div class="media">
-  								<div class="media-left">
-									<span class="badge">42</span></a>
+						<div class="col-md-4">
+							<div class="cardInfo media thumbnail">
+  								<div class="media-left">									
 									<img src="http://www.spoilsinventory.com/pics/SGR/3cc3n7r1c%2073chn1c14n.full.jpg" class="media-object" style="width:75px"/>
+								</div>
+								<div class="media-body">
+									<h4>
+							
+										{{ link_to(LaravelLocalization::getCurrentLocale().'/'.'card/'. $card->number, $card->name,	array('class' => '')) }}
+
+									</h4>
+									<p >{{$card->text}}</p>
+
 								</div>
 							</div>
 						</div>

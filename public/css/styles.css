@@ -1,0 +1,16 @@
+.cardInfo.media{
+	padding: 10px;
+}
+
+.cardInfo h4{
+	margin: 0;
+}
+
+.cardInfo p{
+	max-height: 150px;
+	height:80px;
+	font-size: 1em;
+}
+
+
+
